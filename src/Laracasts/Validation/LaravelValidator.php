@@ -29,5 +29,15 @@ class LaravelValidator implements FactoryInterface {
 	{
 		return $this->validator->make($formData, $rules, $messages);
 	}
+	
+	/**
+	 * Retrieve validator object
+	 * 
+	 * @return \Illuminate\Calidation\Factory
+	 */
+	public function getValidator()
+	{
+		return $this->validator;
+	}
 
 }
